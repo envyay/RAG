@@ -1,0 +1,5 @@
+Nhân viên chính thức được nghỉ phép 14 ngày mỗi năm.
+Quy trình xin nghỉ phép:
+1. Gửi yêu cầu trên hệ thống HR
+2. Chờ quản lý phê duyệt
+3. Nhận xác nhận từ HR
