@@ -1,2 +1,2 @@
-luong thang 13:
-20 trieu dong
+lương tháng 13 của mỗi nhân viên trong công ty của năm nay lần lượt là:
+10 triệu đồng, 20 triệu đồng, 30 triệu đồng
