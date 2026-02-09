@@ -1,14 +1,11 @@
 from src.embedding.embedder import get_embedder
 from src.llm.hf_llm import HFLLM
 from src.rag.context_build import build_context
-# from src.vectorstore.faiss_store import load_index
 from src.vectorstore.retriever import Retriever
 
 retriever = Retriever("docs")
 
 _embedder = get_embedder()
-# _vectorstore = load_index(_embedder)
-# _retriever = get_retriever(_vectorstore)
 _retriever = Retriever("docs")
 _llm = HFLLM("google/gemma-3-4b-it")
 
