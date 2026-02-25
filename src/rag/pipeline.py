@@ -1,5 +1,5 @@
-from src.embedding.embedder import get_embedder
-from src.llm.hf_llm import HFLLM
+# from src.embedding.embedder import get_embedder
+from src.llm.hf_llm import LMStudioLLM
 from src.rag.context_build import build_context
 from src.vectorstore.retriever import Retriever
 
@@ -7,7 +7,8 @@ from src.vectorstore.retriever import Retriever
 
 # _embedder = get_embedder()
 _retriever = Retriever("docs")
-_llm = HFLLM("google/gemma-3-4b-it")
+# _llm = HFLLM("google/gemma-3-4b-it")
+_llm = LMStudioLLM("mistral-7b-instruct-v0.2")
 
 with open("src/prompts/rag_prompt.txt", "r", encoding="utf-8") as f:
     RAG_PROMPT_TEMPLATE = f.read()

@@ -1,9 +1,14 @@
-from src.embedding.embedder import get_embedder
+# from src.embedding.embedder import get_embedder
 from src.vectorstore.qdrant_store import QdrantStore
+
+from src.embedding.embedder import LMStudioEmbedder
 
 class Retriever:
     def __init__(self, collection_name="docs"):
-        self.embedder = get_embedder()
+        self.embedder = LMStudioEmbedder(
+            "text-embedding-intfloat-multilingual-e5-large-instruct"
+        )
+        ...
         self.qdrant = QdrantStore(
             host="localhost",
             port=6333,
